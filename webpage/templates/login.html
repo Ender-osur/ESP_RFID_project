@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% block body %} 
+
+
+<div class="contenido container pt-4 pb-4">
+    <div class="row">
+        <div class="col-md-4 offset-md-4 h4">
+            <form class="pt-4" action="/login" method="post">
+                <div class="form-group">
+                    <fieldset>
+                        <label class="control-label"><strong>Usuario</strong></label>
+                        <input class="form-control form-control-lg" id="rfid" type="text" name="rfid" placeholder="Telefono" required>
+                    </fieldset>
+                </div>                
+                <div class="col-md-12 pt-4 pb-4">
+                    <button class="btn btn-lg btn-block btn-primary" type="submit">Iniciar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
